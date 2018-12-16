@@ -2,9 +2,11 @@
     box-sizing: border-box;
 }
 body{
+    font-family: 'Maven Pro', sans-serif;
     margin: 0;
 }
 .main{
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,10 +31,68 @@ body{
 
 }
 .header{
+    display: flex;
+    justify-content: space-between;
     width: 90%;
+    height: 10vh;
+    align-items: center;
     position: relative;
     z-index: 1;
 }
+
 .main .logo img{
     width: 120px;
+}
+.menu {
+    width: 60%;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.menu-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+.get-started-btn {
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+    border-radius: 100px;
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+.main-text h1 {
+    margin: 0.5rem 1rem 0.5rem 0.5rem;
+    font-size: 80px;
+}
+.main-text span {
+    display: inline-block;
+}
+.main-text span::after {
+    content: " ";
+    width: 20px;
+    height: 1px;
+    background-color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.main-text span::before {
+    content: " ";
+    width: 20px;
+    height: 1px;
+    background-color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
 }
