@@ -177,6 +177,7 @@ html {
     margin-top: 3rem;
 }
 .price-tag {
+    color: #9fa4af;
     background-color: #ffffff;
     border-radius: 2rem;
     padding: 2rem;
@@ -185,7 +186,7 @@ html {
     justify-content: space-between;
     width: 300px;
     height: 400px;
-    text-align: center;
+    align-items: center;
     transition: 0.2s;
 }
 .price-tag:hover {
@@ -197,10 +198,12 @@ html {
     font-size: 1.4rem;
     text-transform: uppercase;
     margin:1rem auto 0.5rem;
+    font-weight: 500;
 }
 
 .price-tags .price-tag img.users {
-    height: 80px;
+    height: 100%;
+    width: 100%;
 }
 .price-tag h4 {
     font-size: 3rem;
@@ -219,7 +222,15 @@ html {
     font-weight: 500;
 }
 
-/*.price-tags .price-tag img.users.group {*/
-    /*border-radius: 50%;*/
-    /*border-color: #6400F0;*/
-/*}*/
+.price-tags .price-tag .icon-wrapper {
+    border-radius: 50%;
+    border: 2px solid #6400F0;
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+.price-tag p {
+    font-size: 1.4em;
+    line-height: 1.7em;
+    text-align: center;
+}
