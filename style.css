@@ -125,12 +125,11 @@ html {
 }
 .table {
     background-color: #f9fafc;
-    height: 100vh;
-    min-height: 400px;
     padding: 10rem;
 }
 .table-header {
     text-align: center;
+    margin-bottom: 5rem;
 }
 .table-header span {
     text-transform: uppercase;
@@ -173,8 +172,8 @@ html {
 }
 .price-tags {
     display: flex;
-    justify-content: space-around;
-    margin-top: 3rem;
+    justify-content: center;
+    margin-right: -30px;
 }
 .price-tag {
     color: #9fa4af;
@@ -185,9 +184,10 @@ html {
     flex-direction: column;
     justify-content: space-between;
     width: 300px;
-    height: 400px;
+    min-height: 425px;
     align-items: center;
     transition: 0.2s;
+    margin-right: 30px ;
 }
 .price-tag:hover {
     cursor: pointer;
@@ -206,6 +206,7 @@ html {
     width: 100%;
 }
 .price-tag h4 {
+    color: #4f4f6f;
     font-size: 3rem;
     font-weight: 700;
     margin: 1rem;
@@ -233,4 +234,21 @@ html {
     font-size: 1.4em;
     line-height: 1.7em;
     text-align: center;
+    margin-bottom: 15px;
+}
+.price-btn {
+    background-color: #ffffff;
+    border: 1px solid #9fa4af;
+    color: #9fa4af;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    transition: 0.3s;
+
+}
+.price-btn:hover {
+    background-color: #6e45e2;
+    color: #ffffff;
 }
