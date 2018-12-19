@@ -307,8 +307,9 @@ html {
   display: flex;
   justify-content: center;
 
+
   .footer {
-    height: 15vh;
+    height: 10vh;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -334,6 +335,8 @@ html {
         }
         .footer-get-started {
           border: 1px solid #6a6a77;
+          background-color: #6e45e2;
+          color: #ffffff;
           padding: 10px 20px;
           border-radius: 100px;
           margin-left: 40px;
@@ -345,3 +348,33 @@ html {
   }
 
 }
+.line {
+  display: block;
+  width: 90%;
+  height: 1px;
+  background-color: #333333;
+  margin: 1rem auto;
+}
+
+  .legal {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .copy {
+      font-size: 1.4rem;
+      color: #6a6a77;
+    }
+
+    .social-link {
+      font-size: 2rem;
+      display: inline-block;
+      margin-right: 1rem;
+
+      .fab {
+        color: #6a6a77;
+
+      }
+    }
+  }
