@@ -19,19 +19,29 @@
         <div class="logo">
             <img src="images/logo1.png" alt="logo">
         </div>
-       <a href="#" class="m-menu-link">
+       <a href="#" class="m-menu-link js-m-menu-hamburger">
            <i class="fas fa-bars"></i>
        </a>
-        <div class="menu visible-lg">
-            <ul class="m-menu">
-                <li><a href="#" class="menu-link">Link1</a></li>
-                <li><a href="#" class="menu-link">Link2</a></li>
-                <li><a href="#" class="menu-link">Link3</a></li>
-                <li><a href="#" class="menu-link">Link4</a></li>
-                <li><a href="#" class="menu-link">Link5</a></li>
-                <li><a href="#" class="get-started-btn menu-link">Link6</a></li>
-            </ul>
-        </div>
+        <ul class="m-menu js-m-menu">
+            <li class="close-btn js-m-menu-close">
+                <i class="fas fa-times"> </i>
+            </li>
+
+            <li><a href="#" class="menu-link">Link1</a></li>
+            <li><a href="#" class="menu-link">Link2</a></li>
+            <li><a href="#" class="menu-link">Link3</a></li>
+            <li><a href="#" class="menu-link">Link4</a></li>
+            <li><a href="#" class="menu-link">Link5</a></li>
+            <li><a href="#" class="get-started-btn menu-link">Link6</a></li>
+        </ul>
+        <ul class="menu visible-lg">
+            <li><a href="#" class="menu-link">Link1</a></li>
+            <li><a href="#" class="menu-link">Link2</a></li>
+            <li><a href="#" class="menu-link">Link3</a></li>
+            <li><a href="#" class="menu-link">Link4</a></li>
+            <li><a href="#" class="menu-link">Link5</a></li>
+            <li><a href="#" class="get-started-btn menu-link">Link6</a></li>
+        </ul>
     </div>
     <div class="main-text">
         <span>Lorem ipsum & dolor sit amet</span>
@@ -127,5 +137,23 @@
         <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var menuH = document.querySelector('.js-m-menu-hamburger');
+        var menu = document.querySelector('.js-m-menu');
+        var closeBtn = document.querySelector('.js-m-menu-close');
+
+        if (menuH && menu && closeBtn) {
+            menuH.addEventListener('click', function () {
+                menu.classList.add('open');
+            });
+
+            closeBtn.addEventListener('click', function () {
+                menu.classList.remove('open');
+            });
+        }
+    });
+</script>
 </body>
 </html>

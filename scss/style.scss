@@ -42,7 +42,7 @@ html {
   width: 90%;
   align-items: center;
   position: relative;
-  z-index: 1;
+  z-index: 3;
   padding: 15px 0;
 }
 
@@ -51,8 +51,6 @@ html {
 }
 .menu {
   width: 60%;
-}
-.menu ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
@@ -362,32 +360,37 @@ html {
   margin: 1rem auto;
 }
 
-  .legal {
-    padding: 20px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.legal {
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    .copy {
-      font-size: 1.4rem;
+  .copy {
+    font-size: 1.4rem;
+    color: #6a6a77;
+  }
+
+  .social-link {
+    font-size: 2rem;
+    display: inline-block;
+    margin-right: 1rem;
+
+    .fab {
       color: #6a6a77;
-    }
 
-    .social-link {
-      font-size: 2rem;
-      display: inline-block;
-      margin-right: 1rem;
-
-      .fab {
-        color: #6a6a77;
-
-      }
     }
   }
+}
 
-  .m-menu-link {
-    display:none;
-  }
+.m-menu-link {
+  display:none;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+
+
+}
 .m-menu{
   padding: 0;
   margin: 0;
@@ -399,14 +402,30 @@ html {
   width: 100%;
   list-style: none;
   font-size: 3rem;
-  line-height: 6rem;
+  line-height: 3rem;
   z-index: 99;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: none;
 
+  &.open {
+    display: none;
+  }
+
+  li {
+    margin-bottom: 30px;
+  }
+
+  .get-started-btn {
+    margin: 0;
+  }
+  .close-btn {
+    font-size: 4rem;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+
+  }
 }
+
 
 @media (max-width: 1199px) {
   html {
@@ -425,20 +444,12 @@ html {
     display: block;
     color: #ffffff;
     font-size: 3rem;
-
-    .m-menu{
-      margin: 0;
-      background-color: #6e45e2;
-      position: fixed;
-      right: 0;
-      top: 0;
-      height: 100vh;
-      width: 100%;
-      text-align: center;
-      list-style: none;
-      font-size: 3rem;
-      line-height: 6rem;
-
     }
+
+  .m-menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-}
+  }
