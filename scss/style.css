@@ -365,6 +365,7 @@ html {
     flex-direction: column;
     align-items: center; }
     .price-tags .price-tag {
+      width: 90%;
       margin-bottom: 15px; }
   .footer-wrap .footer {
     justify-content: center; }
@@ -380,6 +381,8 @@ html {
 @media (max-width: 360px) {
   .main-text span {
     max-width: 250px; }
+  .main-text h1 {
+    font-size: 6rem; }
   .table-header h2 {
     font-size: 4rem; }
   .table-header p {
@@ -387,4 +390,6 @@ html {
   .coll-to-action .header3 {
     font-size: 4rem; }
   .coll-to-action .cta-btn {
-    margin: 1rem -1rem; } }
+    width: 18rem;
+    height: 4.5rem;
+    margin: 1rem -2rem; } }
